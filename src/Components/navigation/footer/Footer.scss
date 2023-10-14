@@ -1,0 +1,107 @@
+.footer {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 5px 5px 5px #000;
+    -moz-box-shadow: 0px 5px 5px 5px #000;
+    box-shadow: 0px 5px 5px 5px #000;
+    background: #fff;
+    z-index: +10;
+
+    &_top {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+        ;
+    }
+    &_title_group{
+        text-align: right;
+    }
+
+    &_title {
+        font-family: $robo;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+
+    &_item {
+        margin: 0 15px;
+        background: #000;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+
+        &:nth-child(1) {
+            margin: 0 15px 0 0;
+        }
+    }
+
+    &_link {
+        width: 25px;
+        height: 25px;
+    }
+
+    &_link_icon {
+        font-size: 25px;
+        color: #fff;
+    }
+    &_instagram{
+        font-size: 32px;
+    }
+    &_instagram_link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    &_text{
+        font-family: $robo;
+        font-weight: 400;
+        font-size: 18px;
+        color:#333;
+        text-transform: uppercase;
+        margin-top: 5px;
+        
+    }
+    &_years_text{
+        font-family: $robo;
+        font-weight: 500;
+        font-size: 20px;
+        color:#000;
+        letter-spacing: 2px;
+    }
+    &_center_span{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 2px;
+        height: 120px;
+        background:#000;
+        margin:0 5px 0 10px;
+    }
+    &_pr_title{
+        font-family: $robo;
+        font-weight: 300;
+        font-size: 105px;
+        color:#000;
+        line-height: 70px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}

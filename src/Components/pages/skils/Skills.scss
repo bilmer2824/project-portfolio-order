@@ -1,0 +1,164 @@
+.skills {
+    width: 100%;
+
+    &_top {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+        margin-bottom: 60px;
+        position: relative;
+        
+        
+        @include media(1400){
+            height: 700px;
+        }
+    }
+
+    &_title {
+        position: absolute;
+        text-align: left;
+        top: 30px;
+        left: 10%;
+
+        font-family: $robo;
+        font-weight: 700;
+        font-size: 45px;
+        color: #000;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        opacity: 0;
+        transform: translate(-30px, 0);
+
+        &.active {
+            opacity: 1;
+            transform: translate(0px, 0);
+        }
+    }
+
+    &_logo_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        transition: 0.5s;
+
+        transform: translate(0px, 50px);
+        opacity: 0;
+
+        &.active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+
+    &_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &_img {
+        height: 210px;
+        margin-bottom: 15px;
+    }
+
+    &_bg_title {
+        font-family: $robo;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    &_icon_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_bg_icon {
+        font-size: 35px;
+        color: #000;
+        transform: rotateY(90deg);
+        transition: 0.4s;
+
+        &.active {
+            animation: key 1s linear 1;
+
+        }
+    }
+}
+
+@keyframes key {
+    0% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+.bg_icone_1 {
+    animation-delay: 0.0s !important;
+}
+
+.bg_icone_2 {
+    animation-delay: 0.2s !important;
+}
+
+.bg_icone_3 {
+    animation-delay: 0.4s !important;
+}
+
+.bg_icone_4 {
+    animation-delay: 0.6s !important;
+}
+
+.bg_icone_5 {
+    animation-delay: 0.8s !important;
+}
+
+.bg_icone_6 {
+    animation-delay: 1s !important;
+}
+
+.bg_icone_7 {
+    animation-delay: 1.2s !important;
+}
+
+.bg_icone_8 {
+    animation-delay: 1.4s !important;
+}
+
+.bg_icone_9 {
+    animation-delay: 1.6s !important;
+}
+
+.bg_icone_10 {
+    animation-delay: 1.8s !important;
+}
+
+.bg_icone_11 {
+    animation-delay: 2s !important;
+}
+
+.bg_icone_12 {
+    animation-delay: 2.2s !important;
+}
+
+.bg_icone_13 {
+    animation-delay: 2.4s !important;
+}
+
+.bg_icone_14 {
+    animation-delay: 2.6s !important;
+}
+
+.bg_icone_15 {
+    animation-delay: 2.8s !important;
+}

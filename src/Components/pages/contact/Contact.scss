@@ -1,0 +1,71 @@
+.contact{
+  width: 100%;
+  
+  &_top{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    margin-bottom: 60px;
+    position: relative;
+    
+    @include media(1400){
+        height: 800px;
+    }
+  }
+  &_form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &_input{
+    width: 630px;
+    height: 75px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    
+    font-family: $robo;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0);
+    
+  }
+  &_message_input{
+    height: 250px;
+  }
+  &_label{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    font-family: $robo;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  &_send_btn{
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: 2px solid #000;
+    background: #000;
+    font-family: $robo;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+  }
+}
+#input_1{opacity:0; transform:translate(0, 30px); transition: 0.5s;}
+#label_1{opacity:0; transform:translate(0, 30px); transition: 0.5s;}
+#label_2{opacity:0; transform:translate(0, 30px); transition: 0.5s;}
+#input_2{opacity:0; transform:translate(0, 30px); transition: 0.5s;}
+#label_3{opacity:0; transform:translate(0, 30px); transition: 0.5s;}
+#input_3{opacity:0; transform:translate(0, 30px); transition: 0.5s;}
+#input_send{opacity:0; transform:translate(0, 30px); transition: 0.5s;}

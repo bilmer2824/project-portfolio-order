@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+@import "./Components/layout/var/Var.scss";
+@import "./Components/layout/var/Root.scss";
+@import "./Components/layout/var/Control.scss";
+
+@import "./Components/navigation/header/Header.scss";
+@import "./Components/navigation/footer/Footer.scss";
+
+@import "./Components/pages/about/About.scss";
+@import "./Components/pages/contact/Contact.scss";
+@import "./Components/pages/home/Home.scss";
+@import "./Components/pages/skils/Skills.scss";
+@import "./Components/pages/word/Word.scss";
+// @import "./Components/";
+// @import "./Components/";
+// @import "./Components/";
+// @import "./Components/";
+// @import "./Components/";

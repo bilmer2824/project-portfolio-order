@@ -1,0 +1,198 @@
+.about {
+    width: 100%;
+    margin-bottom: 60px;
+
+    &_top {
+        padding: 30px;
+        height: 800px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @include media(1400){
+            height: 700px;
+        }
+    }
+
+    &_title {
+        position: absolute;
+        text-align: right;
+        right: 10%;
+        top: 30px;
+
+        font-family: $robo;
+        font-weight: 700;
+        font-size: 45px;
+        color: #000;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        opacity: 0;
+        transform: translate(30px, 0);
+
+        &.active {
+            opacity: 1;
+            transform: translate(0px, 0);
+        }
+
+    }
+
+    &_logo_group {
+        width: 600px;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @include media(1400){
+            width: 500px;
+        }
+    }
+
+    &_user_logo {
+        width: 450px;
+        opacity: 0;
+        transform: translate(-30px, 0);
+        transition:0.5s;
+
+        &.active {
+            opacity: 1;
+            transform: translate(0px, 0);
+        }
+        
+        @include media(1400){
+            width: 380px;
+        }
+    }
+
+    &_title_group {
+        width: 900px;
+        height: 70%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        @include media(1400){
+            width: 700px;
+        }
+    }
+
+    &_title_bg {
+        font-family: $robo;
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        color: #000;
+        opacity: 0;
+        transform: translate(0, 30px);
+        transition-delay: 1s;
+
+        &.active {
+            opacity: 1;
+            transform: translate(0, 0px);
+        }
+    }
+
+    &_text_bg {
+        font-family: $robo;
+        font-weight: 400;
+        font-size: 18px;
+        color: #111;
+        margin-top: 35px;
+
+        opacity: 0;
+        transform: translate(0, 30px);
+        transition-delay: 1s;
+
+        &.active {
+            opacity: 1;
+            transform: translate(0, 0px);
+        }
+        
+        @include media(1400){
+            margin-top: 25px;
+        }
+    }
+
+    &_text_ba {
+        font-family: $robo;
+        font-weight: 400;
+        font-size: 18px;
+        color: #111;
+        margin-top: 10px;
+
+        opacity: 0;
+        transform: translate(0, 30px);
+
+        &.active {
+            opacity: 1;
+            transform: translate(0, 0px);
+        }
+        
+        @include media(1400){
+            margin-top: 5px;
+        }
+    }
+
+    &_last_title {
+        font-family: $robo;
+        font-weight: 500;
+        font-size: 25px;
+        color: #000;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        margin-top: 35px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+
+        opacity: 0;
+        transform: translate(0, 30px);
+    }
+
+    &_list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translate(0, 30px);
+
+    }
+
+    &_item {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &:nth-last-child(1) {
+            text-decoration: underline !important;
+        }
+    }
+
+    &_info_class {
+        font-family: $robo;
+        font-weight: 400;
+        font-size: 16px;
+        color: #111;
+
+
+    }
+
+    &_item_span {
+        width: 8px;
+        height: 8px;
+        background: #000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        transition: 0.5s;
+    }
+}
